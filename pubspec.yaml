@@ -1,0 +1,34 @@
+name: libbary
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Package wajib untuk State Management & API (dari modul sebelumnya)
+  provider: ^6.1.2
+  dio: ^5.4.3
+
+  # Package Biometrik
+  local_auth: ^3.0.1
+  local_auth_android: ^2.0.8
+
+  # Package buatanmu sendiri (pastikan folder my_button_lib ada persis di luar folder project ini)
+  my_button_lib:
+    path: ../my_button_lib
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
